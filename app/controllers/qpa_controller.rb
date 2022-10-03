@@ -1,0 +1,2 @@
+class QpaController < ApplicationController
+end

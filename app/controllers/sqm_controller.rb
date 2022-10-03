@@ -1,0 +1,2 @@
+class SqmController < ApplicationController
+end
