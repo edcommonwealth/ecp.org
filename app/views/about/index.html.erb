@@ -13,41 +13,71 @@
   </div>
 </header>
 
-<!-- About content-->
-<div class="container px-5 text-center">
+<!-- About Accordions -->
+
+<div class="container px-5">
   <div class="row gx-5 justify-content-center">
-    <div class="col-lg-8 mt-5">
-      <h1 class="page-header-ui-title mb-3">Education Commonwealth Project</h1>
-      <p class="page-header-ui-text">The Education Commonwealth Project (ECP) at the University of Massachusetts Lowell is guided by the belief that better school quality data can help identify and respond to inequities in students’ school experiences and that real-world assessments of student learning can enable a greater diversity of students to demonstrate their proficiency. Funded by the Massachusetts State Legislature, ECP offers public school districts across the state a new approach to evaluating school quality and student learning. The School Quality Measures data dashboard and Quality Performance Assessments have already been successfully piloted by the Massachusetts Consortium for Innovative Education Assessment (MCIEA), and with financial backing from Massachusetts State Legislature, they are now being made available on a free and open-source basis.
-      </p>
-      <p class="page-header-ui-text">In place of standardized tests like the MCAS, Quality Performance Assessments emphasize teacher-generated, curriculum-embedded methods to evaluate students’ deeper mastery of content and skills. And seeking to challenge and expand the existing accountability system, the School Quality Measures framework reflects the full scope of what schools do, while also collecting a broader range of data for determining school progress. </p>
-      <a class="text-decoration-none" href="#!">
-        Read More here
-        <i class="bi bi-arrow-right"></i>
-      </a>
-    </div>
-
-    <div class="col-lg-8 mt-5">
-      <h1 class="page-header-ui-title mb-3">History</h1>
-      <p class="page-header-ui-text">The Education Commonwealth Project is an extension of the <%= link_to "Massachusetts Consortium for Innovative Education Assessment (MCIEA)", "https://www.mciea.org/" %>. Formed in 2016 with support from the Massachusetts State Legislature, MCIEA is a partnership of eight public school districts–Attleboro, Boston, Lowell, Milford, Revere, Somerville, Wareham, Winchester–and their local teacher unions. The eight MCIEA districts have worked together since 2016, with support from the University of Massachusetts Lowell and the Center for Collaborative Education, to create fairer and more accurate pictures of students and schools. The consortium is co-governed by the superintendents and teachers’ union presidents in recognition of the benefits to such partnerships.  </p>
-    </div>
-
-    <div class="col-lg-8 mt-5">
-      <h1 class="page-header-ui-title mb-3">Mission</h1>
-      <p class="page-header-ui-text">The mission of ECP is to provide districts with the opportunity to adopt the innovative assessment and accountability tools developed by MCIEA. We seek to increase knowledge among school community members about these alternative measurements, build school and district capacity for employing them, and further develop a system that might be adopted across the Commonwealth. In doing so, ECP strives to advance educational assessment that is more valid, more democratic, and more equitable than the current accountability system powered chiefly by a single set of standardized tests. Districts may choose to join MCIEA, or use one or both of the tools independently and tailored to their specific needs.
-ECP will partner with any Massachusetts public school district, provided that administrators, educators, and community members are meaningfully engaged. Working with ECP can be as simple as having a conversation with our team about assessment. But we also offer the following full range of resources on a free and open-source basis:
-</p>
-<ul class="list-group">
-  <li class="list-group-item">Field-tested student and educator perception surveys and support for using those surveys</li>
-  <li class="list-group-item">Field-tested performance assessments for classroom use, and support for their adoption</li>
-  <li class="list-group-item">Support for building a school quality framework or adapting the School Quality Measures framework</li>
-  <li class="list-group-item">Support for building school-wide performance tasks to assess student learning</li>
-  <li class="list-group-item">Leveraging existing administrative data in new ways</li>
-  <li class="list-group-item">Developing team-oriented “walkthroughs” as measures of school performance and use of curriculum-embedded performance assessments</li>
-  <li class="list-group-item">Protocols for data use in PLCs or other school improvement efforts, as well as for the creation and administration of high quality performance assessments and reliable scoring of student work</li>
-  <li class="list-group-item">A state-of-the-art data dashboard that can be customized for school or district needs</li>
-  <li class="list-group-item">Engagement with families and community members around school quality and performance assessment</li>
-</ul>
+    <div class="accordion my-5" id="aboutAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button fs-4 fg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Education Commonwealth Project
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Education Commonwealth Project: The Education Commonwealth Project (ECP) at the University of Massachusetts Lowell is guided by the belief that assessment should be a tool, not a weapon, and exists for the purpose of empowering educators and community members to strengthen and support their schools. Funded by the Massachusetts State Legislature, ECP offers public school districts across the state a new approach to assessing school quality and student learning. ECP’s two strands of work—School Quality Measures and Quality Performance Assessments—spring from five years of field-testing within the Massachusetts Consortium for Innovative Education Assessment (MCIEA). Because ECP is a publicly-funded project, our tools and technical support are available on a free and open-source basis for public schools and districts seeking to develop alternative approaches to measurement and accountability.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button fs-4 fg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            History 
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>The Education Commonwealth Project is an extension of the <%= link_to "Massachusetts Consortium for Innovative Education Assessment (MCIEA)", "https://www.mciea.org/" %>. Formed in 2016 with support from the Massachusetts State Legislature, MCIEA is a partnership of eight public school districts–Attleboro, Boston, Lowell, Milford, Revere, Somerville, Wareham, and Winchester–and their local teacher unions. The eight MCIEA districts have worked together since 2016, with support from the University of Massachusetts Lowell and the Center for Collaborative Education, to create fairer and more accurate pictures of student learning and school quality. The consortium is co-governed by district superintendents and teachers’ union presidents, in recognition of the benefits to such partnerships.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button fs-4 fg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            Mission
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>The mission of ECP is to provide Massachusetts school districts with the opportunity to adopt and adapt the innovative assessment tools developed within MCIEA. We seek to increase knowledge among school community members about these alternative measurements, build school and district capacity for employing them, and further develop a system that might be adopted across the Commonwealth. In doing so, ECP strives to advance educational assessment that is more valid, democratic, and equitable than the current accountability system powered chiefly by a single set of standardized tests. Districts may partner with ECP to focus on SQM, QPA, or both. They can also use partnership with ECP as an on-ramp to joining MCIEA. Whatever the case, ECP encourages schools and districts to pursue their specific needs in whatever way makes sense to them.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button fs-4 fg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            Getting Started
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>ECP will partner with any Massachusetts public school district, provided that administrators, educators, and community members are meaningfully engaged. Working with ECP can be as simple as having a conversation with our team about assessment. But we also offer the following full range of resources on a free and open-source basis:</p>
+            <ul class="list-group">
+              <li class="list-group-item">Field-tested student and educator perception surveys, and support for using those surveys</li>
+              <li class="list-group-item">Field-tested performance assessments for classroom use, and support for their adoption</li>
+              <li class="list-group-item">Support for building a school quality framework or adapting the ECP School Quality Measures framework</li>
+              <li class="list-group-item">Support for creating school-wide performance tasks to assess student learning</li>
+              <li class="list-group-item">Leveraging existing administrative data in new ways</li>
+              <li class="list-group-item">Developing team-oriented “walkthroughs” as measures of school performance</li>
+              <li class="list-group-item">Using curriculum-embedded performance assessments</li>
+              <li class="list-group-item">Protocols for data use in PLCs or other school improvement efforts, as well as for the creation and administration of high quality performance assessments</li>
+              <li class="list-group-item">A state-of-the-art data dashboard that can be customized for school or district needs</li>
+              <li class="list-group-item"> Engagement with families and community members around the assessment of school quality and student learning </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
