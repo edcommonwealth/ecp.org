@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :about, only: :index
   resources :sqm, only: :index
   resources :qpa, only: :index
+  resources :resource, only: :index
+
 
   root 'home#index'
 end
