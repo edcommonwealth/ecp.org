@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :resource, only: :index
   resources :work_with_ecp, only: :index
   resources :construction, only: :index
+  resources :district_leader, only: :index
 
   root 'home#index'
 end
