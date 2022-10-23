@@ -1,0 +1,11 @@
+@import 'colors';
+h2 a {
+  color: $black;
+  @extend .h5;
+  @extend .fw-bolder;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  color: $gray-1 ;
+}
