@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   resources :construction, only: :index
   resources :district_leader, only: :index
 
+  resources :contacts, only: %i[new create]
+
   root 'home#index'
 end
