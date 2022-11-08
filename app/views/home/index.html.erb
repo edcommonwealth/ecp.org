@@ -35,9 +35,12 @@
   </div>
 </section>
 
-<!-- Message confirmation-->
-<%= render partial: 'layouts/message_confirmation' %>
-
 <!-- Contact section-->
-<%# <%= link_to "Contact Form", new_contact_path  %1> %>
-<%= render partial: "contacts/contact_form"  %>
+<div class="row">
+  <section class="col-md-2 mx-auto">
+  <!-- Message confirmation-->
+  <%= render partial: 'layouts/message_confirmation' %>
+
+  <%= render partial: "contacts/contact_form"  %>
+  </section>
+</div>
