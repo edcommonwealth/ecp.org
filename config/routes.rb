@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :qpa, only: :index
   resources :resource, only: :index
   resources :research, only: :index
+  get 'research/download_pdf', to: "research#download_pdf"
   resources :work_with_ecp, only: :index
   resources :construction, only: :index
   resources :district_leader, only: :index
