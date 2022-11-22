@@ -17,11 +17,11 @@
 <div class="container px-5 my-5">
   <div class="row gx-5 justify-content-center">
     <div>
-      <h3 >
-        The Education Commonwealth Project provides free resources to rethink how school quality and student learning are measured.
-      </h3>
 
-        <div class="container px-5">
+      <div class="container px-5">
+        <h3 >
+          The Education Commonwealth Project provides free resources to rethink how school quality and student learning are measured.
+        </h3>
           <div class="row gx-5 justify-content-center">
             <div class="accordion my-5" id="sqmAccordion">
               <div class="accordion-item">
@@ -70,10 +70,61 @@
                 </div>
               </div>
             </div>
-
-
-
           </div>
+      </div>
+
+
+      <div class="container px-5 row">
+        <h3>SQM resources </h3>
+
+        <div class="grid-container download-container">
+          <%= link_to(resource_download_pdf_path(path: "adding_student_voice_to_the_mix")) do  %>
+            <%= image_tag "resources/sqm/adding_student_voice_to_the_mix.png", class: "file-download"  %>
+          <% end %>
+        </div>
+
+        <div class="grid-container download-container">
+          <%= link_to(resource_download_pdf_path(path: "beyond_good_and_bad")) do  %>
+            <%= image_tag "resources/sqm/beyond_good_and_bad.png", class: "file-download"  %>
+          <% end %>
+        </div>
+
+        <div class="grid-container download-container">
+          <%= link_to(resource_download_pdf_path(path: "beyond_standardized_tests")) do  %>
+            <%= image_tag "resources/sqm/beyond_standardized_tests.png", class: "file-download"  %>
+          <% end %>
+        </div>
+
+        <div class="grid-container download-container">
+          <%= link_to(resource_download_pdf_path(path: "the_mis_measure_of_schools")) do  %>
+            <%= image_tag "resources/sqm/the_mis_measure_of_schools.png", class: "file-download"  %>
+          <% end %>
+        </div>
+      </div>
+
+
+      <div class="container px-5 row">
+        <h3>QPA resources </h3>
+
+        <div class="grid-container download-container">
+          <%= link_to(resource_download_pdf_path(path: "a_national_movement_for_a_new_accountability")) do  %>
+            <%= image_tag "resources/qpa/a_national_movement_for_a_new_accountability.png", class: "file-download"  %>
+          <% end %>
+        </div>
+        <div class="grid-container download-container">
+          <%= link_to(resource_download_pdf_path(path: "its_high_time_for_change_in_our_accountability_systems")) do  %>
+            <%= image_tag "resources/qpa/its_high_time_for_change_in_our_accountability_systems.png", class: "file-download"  %>
+          <% end %>
+        </div>
+        <div class="grid-container download-container">
+          <%= link_to(resource_download_pdf_path(path: "keeping_our_accountability_systems_accountable")) do  %>
+            <%= image_tag "resources/qpa/keeping_our_accountability_systems_accountable.png", class: "file-download"  %>
+          <% end %>
+        </div>
+        <div class="grid-container download-container">
+          <%= link_to(resource_download_pdf_path(path: "piloting_the_use_of_learning_progressions_in_a_system_of_assessment")) do  %>
+            <%= image_tag "resources/qpa/piloting_the_use_of_learning_progressions_in_a_system_of_assessment.png", class: "file-download"  %>
+          <% end %>
         </div>
     </div>
   </div>

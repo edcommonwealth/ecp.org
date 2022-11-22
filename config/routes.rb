@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :sqm, only: :index
   resources :qpa, only: :index
   resources :resource, only: :index
+  get 'resource/download_pdf', to: "resource#download_pdf"
   resources :research, only: :index
   get 'research/download_pdf', to: "research#download_pdf"
   resources :work_with_ecp, only: :index
