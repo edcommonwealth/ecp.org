@@ -1,0 +1,35 @@
+<!-- Header-->
+<header class="bg-dark py-5">
+  <div class="container px-5">
+    <div class="row gx-5 justify-content-center">
+      <div class="col-lg-6">
+        <div class="text-center my-5">
+          <h1 class="display-5 fw-bolder text-white mb-2">Research</h1>
+          <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="container px-5 my-5">
+  <div class="row gx-5 justify-content-center">
+    <div class="grid-container download-container">
+      <%= link_to("Test Anxiety", download: asset_path("docs/test_anxiety_and_poor_sleep_2021.pdf"), target: "_blank") do  %>
+        <%= image_tag "research/test_anxiety_and_sleep.png", class: "file-download"  %>
+      <% end %>
+    </div>
+    <div class="grid-container download-container">
+      <%= link_to("Psychological toll of high statkes testing", download: asset_path("docs/psychological_toll_of_high_stakes_testing_2022.pdf"), target: "_blank") do  %>
+        <%= image_tag "research/psychological_toll_of_high_stakes_testing.png", class: "file-download"  %>
+      <% end %>
+    </div>
+    <div class="grid-container download-container">
+      <%= link_to("Test Anxiety", download: asset_path("docs/testing_stress_and_performance.pdf"), target: "_blank") do  %>
+        <%= image_tag "research/testing_stress.png", class: "file-download"  %>
+      <% end %>
+    </div>
+  </div>
+</div>
