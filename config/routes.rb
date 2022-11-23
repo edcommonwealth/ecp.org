@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   resources :work_with_ecp, only: :index
   resources :construction, only: :index
   resources :district_leader, only: :index
+  resources :in_the_news, only: :index
+  get 'in_the_news/download_pdf', to: "in_the_news#download_pdf"
   resources :home, only: %i[index create]
 
   resources :contacts, only: %i[new create]
