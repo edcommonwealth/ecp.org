@@ -1,17 +1,5 @@
 <!-- Header-->
-<header class="bg-dark py-5">
-  <div class="container px-5">
-    <div class="row gx-5 justify-content-center">
-      <div class="col-lg-6">
-        <div class="text-center my-5">
-          <h1 class="display-5 fw-bolder text-white mb-2">School Quality Measures</h1>
-          <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+<%= render partial: "layouts/header", locals: {heading: "School Quality Measures"}  %>
 
 <!-- Accordions -->
 <div class="container px-5">
@@ -37,7 +25,7 @@
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            Traditional measurement and accountability systems, which rely chiefly on standardized tests, have been plagued by a host of unintended consequences like teaching-to-the-test and the narrowing of educational aims. Moreover, such systems have been largely ineffective at advancing equity and supporting the work of school improvement. By offering a fuller picture of schools, and by creating opportunities to better understand school performance, SQM takes a whole new approach to data use.
+            By offering a fuller picture of schools, and by creating opportunities to better understand school performance, SQM takes a new approach to data use.
           </div>
         </div>
       </div>
@@ -50,7 +38,7 @@
         <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <h3 class="fs-5">Aligning assessment with public values</h3>
-            <p>The SQM approach includes a wide range of indicators aligned with the domains of school quality that Americans value and that research supports. By assessing the many things that schools do, the SQM system seeks to honor and sustain the full mission of public schools.</p>
+            <p> SQM includes a wide range of indicators aligned with the domains of school quality that are valued by the public and supported by the educational research community. The SQM system seeks to honor and sustain the full mission of public schools. </p>
             <h3 class="fs-5">Drawing on multiple measures of school quality </h3>
             <p>SQM includes 34 indicators of school quality, seeking to paint a more accurate and valid picture of school performance. By using multiple measures, SQM moves beyond the narrow and overly simplistic notion of “good” and “bad” schools that shapes public opinion and public policy. </p>
             <h3 class="fs-5">Breaking the link between school measurement and social inequity</h3>
@@ -69,27 +57,27 @@
         <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <p>
-            <a class="text-decoration-none" href="#!">
-              Read more about SQM's Free-and-Open SQM Data Dashboard here
+            <a class="text-decoration-none" href="https://mciea-dashboard.herokuapp.com/welcome">
+              Explore the SQM Data Dashboard here 
               <i class="bi bi-arrow-right"></i>
             </a>
             </p>
             <p>
-            <a class="text-decoration-none" href="#!">
+            <a class="text-decoration-none" href="https://www.mciea.org/uploads/1/2/0/7/120788330/mciea-sqm-framework-short-2018.pdf">
               See our Measures Menu Here
               <i class="bi bi-arrow-right"></i>
             </a>
 
             </p>
             <p>
-            <a class="text-decoration-none" href="#!">
+            <a class="text-decoration-none" href="<%=  resource_index_path(anchor: "sqm-resources") %>">
               Read the Research on SQM
               <i class="bi bi-arrow-right"></i>
             </a>
 
             </p>
             <p>
-            <a class="text-decoration-none" href="#!">
+            <a class="text-decoration-none" href="<%= team_index_path(anchor: "peter") %>">
               Speak with a Member of the SQM Team
               <i class="bi bi-arrow-right"></i>
             </a>
