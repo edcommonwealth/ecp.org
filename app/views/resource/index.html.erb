@@ -3,116 +3,58 @@
 
 <div class="container px-5 my-5">
   <div class="row gx-5 justify-content-center">
-    <div>
+    <div class="container px-5 row">
+      <h3 id="sqm-resources">SQM resources </h3>
 
-      <div class="container px-5">
-        <h3 >
-          The Education Commonwealth Project provides free resources to rethink how school quality and student learning are measured.
-        </h3>
-          <div class="row gx-5 justify-content-center">
-            <div class="accordion my-5" id="sqmAccordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button fs-4 fg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Who can use the resources?
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p> The free and open-source tools are available to anyone for immediate download. </p>
-                    <p> Maybe you are an educator interested in trying out a performance assessment in your classroom. Maybe you’re an elementary school principal interested in understanding the sense of belonging that exists at your school using field-tested perception surveys of teachers and students. Maybe you’re a parent of a school-aged child who is interested in how to get a fuller story of your child’s school quality. Maybe you’re a district superintendent interested in how to use other DESE data, beyond MCAS scores, to advocate for the needs of your schools. </p>
-                    <p>Whatever your role, whatever your reason, ECP is making these tools available to you. </p>
-                    <p>When you agree to the open-source licensing (in which you agree you don‘t intend to capitalize on our tools), you’ll register with ECP. If you indicate that you’re open to hearing from us, we may reach out to you.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button fs-4 fg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    Why become an ECP partner?
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p> We will work with you to build relationships between teachers, administration, districts, and community. We will provide support to use and customize resources to measure school quality and student learning in ways that reflect the values of your community. We can consult on how to use data to make informed policy decisions and how to leverage data to advocate for student needs. Your partnership with ECP will help you build capacity to join MCIEA as a member district if that is a direction you choose to pursue.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button fs-4 fg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                    How to become an ECP partner:
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>When anyone in a district expresses interest in consulting with us or receiving support from us, we will reach out to engage all interested parties in meaningful ways with the project and project resources. We’re eager to work with communities who collectively recognize the value of alternative school quality and student learning measures. </p>
-                    <p> Whatever your role, whatever your reason, you can initiate working with ECP. </p>
-                    <%# TODO implement these links %>
-                    <p> Click here for more information on:
-                    ECP		 	SQM			QPA  		(links to other pages) </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="grid-container download-container">
+        <%= link_to(resource_download_pdf_path(path: "adding_student_voice_to_the_mix")) do  %>
+          <%= image_tag "resources/sqm/adding_student_voice_to_the_mix.png", class: "file-download"  %>
+        <% end %>
       </div>
 
-
-      <div class="container px-5 row">
-        <h3 id="sqm-resources">SQM resources </h3>
-
-        <div class="grid-container download-container">
-          <%= link_to(resource_download_pdf_path(path: "adding_student_voice_to_the_mix")) do  %>
-            <%= image_tag "resources/sqm/adding_student_voice_to_the_mix.png", class: "file-download"  %>
-          <% end %>
-        </div>
-
-        <div class="grid-container download-container">
-          <%= link_to(resource_download_pdf_path(path: "beyond_good_and_bad")) do  %>
-            <%= image_tag "resources/sqm/beyond_good_and_bad.png", class: "file-download"  %>
-          <% end %>
-        </div>
-
-        <div class="grid-container download-container">
-          <%= link_to(resource_download_pdf_path(path: "beyond_standardized_tests")) do  %>
-            <%= image_tag "resources/sqm/beyond_standardized_tests.png", class: "file-download"  %>
-          <% end %>
-        </div>
-
-        <div class="grid-container download-container">
-          <%= link_to(resource_download_pdf_path(path: "the_mis_measure_of_schools")) do  %>
-            <%= image_tag "resources/sqm/the_mis_measure_of_schools.png", class: "file-download"  %>
-          <% end %>
-        </div>
+      <div class="grid-container download-container">
+        <%= link_to(resource_download_pdf_path(path: "beyond_good_and_bad")) do  %>
+          <%= image_tag "resources/sqm/beyond_good_and_bad.png", class: "file-download"  %>
+        <% end %>
       </div>
 
+      <div class="grid-container download-container">
+        <%= link_to(resource_download_pdf_path(path: "beyond_standardized_tests")) do  %>
+          <%= image_tag "resources/sqm/beyond_standardized_tests.png", class: "file-download"  %>
+        <% end %>
+      </div>
 
-      <div class="container px-5 row">
-        <h3>QPA resources </h3>
+      <div class="grid-container download-container">
+        <%= link_to(resource_download_pdf_path(path: "the_mis_measure_of_schools")) do  %>
+          <%= image_tag "resources/sqm/the_mis_measure_of_schools.png", class: "file-download"  %>
+        <% end %>
+      </div>
+    </div>
 
-        <div class="grid-container download-container">
-          <%= link_to(resource_download_pdf_path(path: "a_national_movement_for_a_new_accountability")) do  %>
-            <%= image_tag "resources/qpa/a_national_movement_for_a_new_accountability.png", class: "file-download"  %>
-          <% end %>
-        </div>
-        <div class="grid-container download-container">
-          <%= link_to(resource_download_pdf_path(path: "its_high_time_for_change_in_our_accountability_systems")) do  %>
-            <%= image_tag "resources/qpa/its_high_time_for_change_in_our_accountability_systems.png", class: "file-download"  %>
-          <% end %>
-        </div>
-        <div class="grid-container download-container">
-          <%= link_to(resource_download_pdf_path(path: "keeping_our_accountability_systems_accountable")) do  %>
-            <%= image_tag "resources/qpa/keeping_our_accountability_systems_accountable.png", class: "file-download"  %>
-          <% end %>
-        </div>
-        <div class="grid-container download-container">
-          <%= link_to(resource_download_pdf_path(path: "piloting_the_use_of_learning_progressions_in_a_system_of_assessment")) do  %>
-            <%= image_tag "resources/qpa/piloting_the_use_of_learning_progressions_in_a_system_of_assessment.png", class: "file-download"  %>
-          <% end %>
-        </div>
+
+    <div class="container px-5 row">
+      <h3>QPA resources </h3>
+
+      <div class="grid-container download-container">
+        <%= link_to(resource_download_pdf_path(path: "a_national_movement_for_a_new_accountability")) do  %>
+          <%= image_tag "resources/qpa/a_national_movement_for_a_new_accountability.png", class: "file-download"  %>
+        <% end %>
+      </div>
+      <div class="grid-container download-container">
+        <%= link_to(resource_download_pdf_path(path: "its_high_time_for_change_in_our_accountability_systems")) do  %>
+          <%= image_tag "resources/qpa/its_high_time_for_change_in_our_accountability_systems.png", class: "file-download"  %>
+        <% end %>
+      </div>
+      <div class="grid-container download-container">
+        <%= link_to(resource_download_pdf_path(path: "keeping_our_accountability_systems_accountable")) do  %>
+          <%= image_tag "resources/qpa/keeping_our_accountability_systems_accountable.png", class: "file-download"  %>
+        <% end %>
+      </div>
+      <div class="grid-container download-container">
+        <%= link_to(resource_download_pdf_path(path: "piloting_the_use_of_learning_progressions_in_a_system_of_assessment")) do  %>
+          <%= image_tag "resources/qpa/piloting_the_use_of_learning_progressions_in_a_system_of_assessment.png", class: "file-download"  %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
