@@ -2,19 +2,27 @@ $black: #3E3A38;
 $gray-1: #595959;
 $gray-2: #CECECE;
 $gray-3: #F3F3F3;
-$light-blue: #FAFCFD;
+
+$primary: #7f9df6;
+$primary-lighter:  #b9caff;
+$primary-darker: darken($primary, 30%);
+
+$secondary: #ffab2b; 
+$secondary-lighter: #ffcb7c;
+$secondary-darker: darken($secondary, 30%);
+
 $white: #FFFFFF;
 
 $blue: #01788E;
+$light-blue: #FAFCFD;
 $dark-blue: #1d2742;
-
-// #1d2742;
 
 $red: #C93047;
 $dark-red: #920020;
 
 $gold: #FFC857;
 $light-gold: #FFFAEE;
+
 $purple: #49416D;
 $light-purple: #EDECF0;
 
@@ -27,6 +35,28 @@ $growth: $gold;
 $approval: $purple;
 $ideal: $purple;
 
+.color-primary {
+  color: $primary;
+}
+
+.color-primary-lighter {
+  color: $primary-lighter;
+}
+
+.color-primary-darker {
+  color: $primary-darker;
+}
+.color-secondary {
+  color: $secondary;
+}
+
+.color-secondary-lighter {
+  color: $secondary-lighter;
+}
+
+.color-secondary-darker {
+  color: $secondary-darker;
+}
 .color-red {
   color: $red;
 }
@@ -56,6 +86,22 @@ $ideal: $purple;
 
 .color-gray-2 {
   color: $gray-2;
+}
+
+.bg-color-primary {
+  background-color: $primary;
+}
+
+.bg-color-primary-lighter {
+  background-color: $primary-lighter;
+}
+
+.bg-color-secondary {
+  background-color: $secondary;
+}
+
+.bg-color-secondary-lighter {
+  background-color: $secondary-lighter;
 }
 
 .bg-color-light-blue {

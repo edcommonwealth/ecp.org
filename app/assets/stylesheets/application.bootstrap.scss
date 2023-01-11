@@ -1,7 +1,9 @@
+@import 'partials/colors';
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
-@import 'partials/colors';
 @import 'partials/bootstrap-overrides';
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";
 @import 'partials/layout';
 @import 'partials/links';
 @import 'partials/downloads';

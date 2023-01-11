@@ -1,4 +1,5 @@
 @import 'colors';
+
 .accordion-button:not(.collapsed) {
   color: shade-color($primary, 50%);
 }
