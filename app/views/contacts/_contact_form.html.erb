@@ -3,7 +3,7 @@
     <h1>Contact Form</h1>
   </div>
   <%= form_for @contact, url: home_index_path, method: :create, data: { turbo: false } do |f| %>
-    <hr class="color-secondary" />
+    <hr class="color-dark-blue" />
     <div class="form-group">
       <%= f.label :name %></br>
       <%= f.text_field  :name, required: true, class: "form-control" %></br>

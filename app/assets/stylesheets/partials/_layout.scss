@@ -6,3 +6,27 @@
 .grid-item {
   padding: 20px;
 }
+
+.custom-shape-divider-bottom-triangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-triangle svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 72px;
+}
+
+.custom-shape-divider-bottom-triangle .shape-fill {
+  fill: #FFFFFF;
+}
+
+.relative {
+  position: relative;
+}
