@@ -9,6 +9,12 @@
   grid-auto-columns: 1fr;
 }
 
+@media(min-width: 992px){
+  .grid-item__title {
+    min-height: 4em;
+  }
+}
+
 .custom-shape-divider-bottom-triangle {
   position: absolute;
   bottom: 0;
