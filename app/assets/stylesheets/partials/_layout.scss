@@ -1,10 +1,12 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
 }
 
 .grid-item {
   padding: 20px;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
 }
 
 .custom-shape-divider-bottom-triangle {
