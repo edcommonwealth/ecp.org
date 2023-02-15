@@ -10,6 +10,8 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
     <%# <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> %>
+
+    <%= render partial: 'layouts/google_analytics', locals: { google_analytics_id: @google_analytics_id } %>
   </head>
 
   <body>
