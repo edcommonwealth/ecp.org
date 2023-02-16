@@ -1,3 +1,4 @@
+<%# TODO: Delete this file and controller and route entry %>
 <!-- Header-->
 <%= render partial: "layouts/header", locals: {heading: "Resources"}  %>
 
@@ -32,30 +33,37 @@
     </div>
 
 
-    <div class="container px-5 row">
-      <h3>QPA resources </h3>
+
+<div class="container px-5">
+  <div class="row gx-5 my-5 justify-content-center">
 
       <div class="grid-container download-container">
+        <h2 class="my-3 text-center fs-5">A national movement for a new accountability</h2>
         <%= link_to(resource_download_pdf_path(path: "a_national_movement_for_a_new_accountability")) do  %>
           <%= image_tag "resources/qpa/a_national_movement_for_a_new_accountability.png", class: "file-download"  %>
         <% end %>
       </div>
       <div class="grid-container download-container">
+        <h2 class="my-3 text-center fs-5">It's high time for change in our accountability systems</h2>
         <%= link_to(resource_download_pdf_path(path: "its_high_time_for_change_in_our_accountability_systems")) do  %>
           <%= image_tag "resources/qpa/its_high_time_for_change_in_our_accountability_systems.png", class: "file-download"  %>
         <% end %>
       </div>
       <div class="grid-container download-container">
+        <h2 class="my-3 text-center fs-5">Keeping accountability systems accountable</h2>
         <%= link_to(resource_download_pdf_path(path: "keeping_our_accountability_systems_accountable")) do  %>
           <%= image_tag "resources/qpa/keeping_our_accountability_systems_accountable.png", class: "file-download"  %>
         <% end %>
       </div>
       <div class="grid-container download-container">
+        <h2 class="my-3 text-center fs-5">Adding student voice to the mix: Perception surveys and state accountability systems</h2>
         <%= link_to(resource_download_pdf_path(path: "piloting_the_use_of_learning_progressions_in_a_system_of_assessment")) do  %>
           <%= image_tag "resources/qpa/piloting_the_use_of_learning_progressions_in_a_system_of_assessment.png", class: "file-download"  %>
         <% end %>
       </div>
-    </div>
+    
+  </div>
+</div>
   </div>
 </div>
 

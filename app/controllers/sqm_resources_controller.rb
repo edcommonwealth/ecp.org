@@ -1,0 +1,2 @@
+class SqmResourcesController < ApplicationController
+end
