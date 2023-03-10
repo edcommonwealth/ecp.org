@@ -1,5 +1,5 @@
 <!-- Header-->
-<header class="py-5 relative">
+<header class="py-4 relative">
   <div class="container px-5">
     <div class="row justify-content-center align-items-center">
       <%= image_tag "logo.svg", size: '250x250', class: "col-12 col-md-4 mx-0 px-0" %>
@@ -8,9 +8,8 @@
   </div>
 </header>
 
-
 <div class="container">
-  <section class="row bg-secondary text-white p-6">
+  <section class="row bg-secondary text-white p-7">
     <p class="m-0">The Education Commonwealth Project works to challenge and expand the way student learning and school quality are assessed, advancing an approach to measurement and accountability that is valid, democratic, and equitable. ECP supports schools and communities with free and open-source tools, and broadly seeks to foster state- and national-level change.</p>
   </section>
 
@@ -20,18 +19,18 @@
 
   <section class="row bg-primary text-white p-6 ">
     <div class="col p-5 ">
-      <div class=" row justify-content-center">
+      <%= link_to sqm_index_path, class: "row justify-content-center text-white text-decoration-none" do  %>
         <%= image_tag "guage.svg", size: "100x100" %>
-        <h2 class="fs-5 mt-4 mb-3">School Quality measures</h2> 
+        <h2 class="fs-5 mt-4 mb-3 text-decoration-underline">School Quality measures</h2> 
         <p>School quality measures (SQM) framework aims to describe the full measure of what makes a good school, using five major categories</p>
-      </div>
+      <% end %>
     </div>
     <div class="col p-5 ">
-      <div class=" row justify-content-center">
+      <%= link_to sqm_index_path, class: "row justify-content-center text-white text-decoration-none" do  %>
         <%= image_tag "portfolio.svg", size: "100x100" %>
-        <h2 class="fs-5 mt-4 mb-3">Portfolios of Performance</h2> 
+        <h2 class="fs-5 mt-4 mb-3 text-decoration-underline">Portfolios of Performance</h2> 
         <p>Portfolios of Performance (POPs) are standards-aligned, curriculum-embedded tasks that measure students’ deeper learning of content and skills</p>
-      </div>
+      <% end %>
     </div>
   </section>
 </div>
