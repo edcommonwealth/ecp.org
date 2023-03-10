@@ -1,8 +1,6 @@
 class HomeController < ApplicationController
   skip_before_action :verify_authenticity_token
-  def index
-    @contact = Contact.new
-  end
+  def index; end
 
   def create
     puts '*****************************    Inside home controller    *****************************************'

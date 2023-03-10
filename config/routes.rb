@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get 'in_the_news/download_pdf', to: 'in_the_news#download_pdf'
   resources :home, only: %i[index create]
 
-  resources :contacts, only: %i[new create]
+  resources :contacts, only: %i[index new create]
 
   root 'home#index'
 end

@@ -1,0 +1,11 @@
+<%= render partial: "layouts/header", locals: {heading: "Contact Us"}  %>
+
+<!-- Contact section-->
+<div class="py-5 row bg-gray">
+  <section class="col-md-4 mx-auto color-dark-blue">
+    <!-- Message confirmation-->
+    <%= render partial: 'layouts/message_confirmation' %>
+
+    <%= render partial: "contacts/contact_form"  %>
+  </section>
+</div>

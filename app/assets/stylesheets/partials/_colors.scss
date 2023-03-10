@@ -3,12 +3,14 @@ $gray-1: #595959;
 $gray-2: #CECECE;
 $gray-3: #F3F3F3;
 
-$primary: #7f9df6;
-$primary-lighter:  #b9caff;
+$primary: #0B8D9C;
+$primary-lighter:  lighten($primary, 30%);
+$primary-dark: darken($primary, 15%);
 $primary-darker: darken($primary, 30%);
 
-$secondary: #ffab2b; 
-$secondary-lighter: #ffcb7c;
+$secondary: #C93148; 
+$secondary-lighter: darken($secondary, 30%);
+$secondary-dark: darken($secondary, 15%);
 $secondary-darker: darken($secondary, 30%);
 
 $white: #FFFFFF;
