@@ -1,0 +1,13 @@
+.nav-spacing {
+  @extend .mx-3;
+}
+
+.navbar {
+  @extend .navbar;
+  font-size: 1.5rem;
+}
+
+.dropdown-item {
+  @extend .dropdown-item;
+  font-size: 1.3rem;
+}

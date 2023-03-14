@@ -3,8 +3,8 @@
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
   <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
     <ul class="nav navbar-nav mb-2 mb-lg-0">
-      <li class="nav-item"><%= link_to "Home", home_index_path, class: "nav-link " + link_highlight(paths: [home_index_path, root_path])  %></li>
-      <li class="nav-item dropdown">
+      <li class="nav-item nav-spacing"><%= link_to "Home", home_index_path, class: "nav-link " + link_highlight(paths: [home_index_path, root_path])  %></li>
+      <li class="nav-item dropdown nav-spacing">
         <a class="nav-link dropdown-toggle <%= link_highlight(paths: [sqm_index_path, qpa_index_path]) %>" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Our Work
         </a>
@@ -13,7 +13,7 @@
           <li class="nav-item"><%= link_to "Performance Assessment", qpa_index_path, class: "dropdown-item"%></li>
         </ul>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown nav-spacing">
         <a class="nav-link dropdown-toggle <%= link_highlight(paths: [ in_the_news_index_path, sqm_resources_path, qpa_resources_path])  %> " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           News and Resources
         </a>
@@ -23,7 +23,7 @@
           <li class="nav-item"><%= link_to "QPA resources", qpa_resources_path, class: "dropdown-item" %></li>
         </ul>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown nav-spacing">
         <a class="nav-link dropdown-toggle <%= link_highlight(paths: [ team_index_path, mission_index_path]) %>" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           About Us
         </a>
