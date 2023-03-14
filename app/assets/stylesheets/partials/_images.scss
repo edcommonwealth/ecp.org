@@ -1,9 +1,16 @@
-.children {
-  background-image: url(children.webp);
+.bg-image {
   background-repeat: no-repeat;
   background-position: 0% 35%;
   background-size: cover;
   padding-top: 50px;
   padding-bottom: 50px;
   height: 440px;
+}
+
+.children {
+  background-image: url(children.webp);
+}
+
+.choir {
+  background-image: url(mission/choir.webp);
 }
