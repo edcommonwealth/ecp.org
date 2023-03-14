@@ -1,6 +1,13 @@
 .grid-container {
   display: grid;
+}
+
+.grid-container-400 {
   grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+}
+
+.grid-container-200 {
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
 }
 
 .grid-item {
@@ -49,8 +56,4 @@
   @extend .col-md-8;
   @extend .col-lg-7;
   @extend .col-xl-5;
-}
-
-.grid-container {
-  display: grid;
 }
