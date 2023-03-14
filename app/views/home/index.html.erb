@@ -10,7 +10,7 @@
 
 <div>
   <section class="row bg-secondary text-white p-7 justify-content-center">
-    <div class="col col-sm-10 col-md-8 col-lg-7 col-xl-5">
+    <div class="dynamic-content">
       <p class="m-0">The Education Commonwealth Project works to challenge and expand the way student learning and school quality are assessed, advancing an approach to measurement and accountability that is valid, democratic, and equitable. ECP supports schools and communities with free and open-source tools, and broadly seeks to foster state- and national-level change.</p>
     </div>
   </section>
@@ -20,15 +20,16 @@
   <section class="row bg-primary text-white py-7 justify-content-center ">
     <div class="col col-sm-10 col-md-8 col-lg-7 col-xl-5">
       <div class="row justify-content-center align-items-center">
-        <div class="col col-sm-11 col-md-10 col-lg-5 mx-4">
+
+        <div class="dynamic-content py-5">
           <%= link_to sqm_index_path, class: "row text-white text-decoration-none" do  %>
             <%= image_tag "guage.svg", size: "100x100" %>
             <h2 class="fs-5 mt-4 mb-3 text-decoration-underline">School Quality Measures</h2> 
             <p>Stakeholders identify what is most important to know about school quality. Multiple measures provide a robust picture of school strengths and areas for improvement.</p>
           <% end %>
         </div>
-        <div class="col col-sm-11 col-md-10 col-lg-5 py-5">
-          <%= link_to sqm_index_path, class: "row justify-content-center text-white text-decoration-none" do  %>
+        <div class="dynamic-content py-5">
+          <%= link_to sqm_index_path, class: "row text-white text-decoration-none" do  %>
             <%= image_tag "portfolio.svg", size: "100x100" %>
             <h2 class="fs-5 mt-4 mb-3 text-decoration-underline">Performance Assessments</h2> 
             <p>Teachers lead the design of curriculum-embedded performance assessments and the scoring of student work. Students demonstrate what they know and can do through real-world application.</p>
