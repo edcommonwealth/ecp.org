@@ -1,0 +1,32 @@
+<!-- Header-->
+<%= render partial: "layouts/header", locals: {heading: "Our Mission"}  %>
+
+<section class="bg-image choir"> </section>
+
+<section class="row my-5 justify-content-center">
+  <div class="col col-sm-10 col-md-8 col-lg-7 col-xl-5">
+    <article class="my-5">
+      <h2 class="color-primary">Mission</h2>
+      <p class="py-3">The Education Commonwealth Project works to challenge and expand the way student learning and school quality are assessed, advancing an approach to measurement and accountability that is valid, democratic, and equitable. ECP supports schools and communities with free and open-source tools, and broadly seeks to foster state- and national-level change.</p>
+    </article>
+    <article>
+      <h2 class="color-primary">History</h2>
+      <p class="py-3">ECP tools have been successfully piloted by the <a href="mciea.org">Massachusetts Consortium for Innovative Education Assessment</a>. MCIEA is a partnership of eight public school districts and their local educator unions working together since 2016 to create a humanistic accountability system that is grounded in educational equity. </p>
+    </article>
+  </div>
+</section>
+
+<section class="row justify-content-center">
+  <div class="col col-sm-10 col-md-8 col-lg-7 col-xl-5">
+    <%= image_tag "mission/partnership.svg" , style: "width:100%;" %>
+  </div>
+</section>
+
+
+<section class="row justify-content-center">
+  <div class="col col-sm-10 col-md-8 col-lg-7 col-xl-5">
+    <h2 class="color-primary">Looking For More Information?</h2>
+    <p> <%= link_to "Download the ECP Fact Sheet", "/"  %> </p>
+    <p> <%= link_to "Download the ECP Frequently Asked Questions", "/"  %> </p>
+  </div>
+</section>
