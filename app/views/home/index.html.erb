@@ -1,37 +1,33 @@
 <!-- Header-->
 <header class="py-4 relative">
   <div class="container px-5">
-    <div class="row justify-content-center align-items-center">
-      <%= image_tag "encircled_logo.svg", size: '250x250', class: "col-12 col-md-4 mx-0 px-0" %>
-      <p class="col-12 col-md-4 m-0 p-0 hero-text"><i>Transforming how we assess student learning & school quality</i></p>
+    <div class="row justify-content-center align-items-center" >
+      <%= image_tag "logo.svg", size: '330x330', class: "col-12 col-md-4 col-lg-6 mx-0 px-0", style: "width:50%; min-width:400px;" %>
+      <p class="col-12 col-md-8 col-lg-5 m-0 p-0 hero-text"><i>Transforming the assessment of student learning and school quality</i></p>
     </div>
   </div>
 </header>
-
 <div>
   <section class="row bg-secondary text-white p-7 justify-content-center">
     <div class="dynamic-content">
       <p class="m-0">The Education Commonwealth Project works to challenge and expand the way student learning and school quality are assessed, advancing an approach to measurement and accountability that is valid, democratic, and equitable. ECP supports schools and communities with free and open-source tools, and broadly seeks to foster state- and national-level change.</p>
     </div>
   </section>
-
   <section class="bg-image children" ></section>
-
   <section class="row bg-primary text-white py-7 justify-content-center ">
     <div class="grid-container grid-container-200 dynamic-content">
       <%= link_to sqm_index_path, class: "grid-item text-white text-decoration-none" do  %>
         <div class="row justify-content-center">
           <%= image_tag "guage.svg", size: "100x100" %>
-          <h2 class="fs-5 mt-5 mb-3 text-decoration-underline">School Quality Measures</h2> 
+          <h2 class="fs-5 mt-5 mb-3 text-decoration-underline">School Quality Measures</h2>
           <p>Stakeholders identify what is most important to know about school quality. Multiple measures provide a robust picture of school strengths and areas for improvement.</p>
         </div>
       <% end %>
-
       <%= link_to sqm_index_path, class: "grid-item text-white text-decoration-none" do  %>
         <div class="row justify-content-center">
-        <%= image_tag "portfolio.svg", size: "100x100" %>
-        <h2 class="fs-5 mt-5 mb-3 text-decoration-underline">Performance Assessments</h2> 
-        <p>Teachers lead the design of curriculum-embedded performance assessments and the scoring of student work. Students demonstrate what they know and can do through real-world application.</p>
+          <%= image_tag "portfolio.svg", size: "100x100" %>
+          <h2 class="fs-5 mt-5 mb-3 text-decoration-underline">Performance Assessments</h2>
+          <p>Teachers lead the design of curriculum-embedded performance assessments and the scoring of student work. Students demonstrate what they know and can do through real-world application.</p>
         </div>
       <% end %>
     </div>
