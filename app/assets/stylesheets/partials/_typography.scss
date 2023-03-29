@@ -1,7 +1,16 @@
-.nav, .nav-item, .dropdown-item {
-  font-family: 'League Spartan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.bold {
   font-weight: 700;
 }
+
+.spartan {
+  font-family: 'League Spartan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  @extend .bold;
+}
+
+.nav, .nav-item, .dropdown-item {
+  @extend .spartan;
+}
+
 
 .hero-text {
   font-family: 'DM Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
