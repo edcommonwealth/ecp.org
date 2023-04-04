@@ -1,34 +1,27 @@
 <!-- Header-->
-<%= render partial: "layouts/header", locals: {heading: "SQM resources"}  %>
-
+<%= render partial: "layouts/header", locals: {heading: "SQM Resources"}  %>
 <!-- Accordions -->
 <div class="container px-5">
   <div class="row gx-5 justify-content-center">
-
     <div class="container px-5 my-5 row">
-
       <div class="grid-container download-container">
-
         <h2 class="my-3 text-center fs-5">Adding student voice to the mix: Perception surveys and state accountability systems</h2>
         <%= link_to(resource_download_pdf_path(path: "adding_student_voice_to_the_mix")) do  %>
           <%= image_tag "resources/sqm/adding_student_voice_to_the_mix.png", class: "file-download"  %>
         <% end %>
       </div>
-
       <div class="grid-container download-container">
         <h2 class="my-3 text-center fs-5">Beyond 'good' and 'bad': Disrupting narratives about school quality</h2>
         <%= link_to(resource_download_pdf_path(path: "beyond_good_and_bad")) do  %>
           <%= image_tag "resources/sqm/beyond_good_and_bad.png", class: "file-download"  %>
         <% end %>
       </div>
-
       <div class="grid-container download-container">
         <h2 class="my-3 text-center fs-5">Beyond standardized tests: A new vision for assessing student learning and school quality</h2>
         <%= link_to(resource_download_pdf_path(path: "beyond_standardized_tests")) do  %>
           <%= image_tag "resources/sqm/beyond_standardized_tests.png", class: "file-download"  %>
         <% end %>
       </div>
-
       <div class="grid-container download-container">
         <h2 class="my-3 text-center fs-5">The (Mis)measure of schools: How data affect stakeholder knowledge and perceptions of quality</h2>
         <%= link_to(resource_download_pdf_path(path: "the_mis_measure_of_schools")) do  %>
@@ -36,6 +29,5 @@
         <% end %>
       </div>
     </div>
-
   </div>
 </div>
